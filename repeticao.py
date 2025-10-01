@@ -16,8 +16,18 @@ print('*' * 20)
 # exemplo 2
 # 0 -1 indica que o  intervalo irá de -1 em -1, isto é o passo a passo do valor inicial até o valor final.
 for contador in range(10,0,-1):
-    print(contador,end=' ')
-    
+   print(contador,end=' ')
+
+print('\n') 
 # exemplo 3
 for contador in range(0, 21, 2):
-     print(contador,end=', ')
+    print(contador,end=', ')
+
+print('\n')
+for contador in range(10, 501, 10):
+    print(contador, end=' ')
+
+
+print('\n')
+
+
