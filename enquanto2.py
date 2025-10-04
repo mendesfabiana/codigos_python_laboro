@@ -13,17 +13,17 @@ print('Obrigada por usar o sistema!')
 
 tentativas = 3
 while True:
-    senha = input('Informe sua senha: ')
+    senha = input('\nInforme sua senha: ')
 
     if senha == 'aluno2' and tentativas > 0:
-        print('Acesso liberado!')
+        print('\nACESSO LIBERADO!\n')
         break # este comando irá encerrar o while.
     
     if tentativas > 0:
         tentativas -= 1 # está diminuindo as tentativas
-
+        print(f'Você possui {tentativas} tentativa(s)\n')
     if tentativas <= 0:
-        print('Sem tentativas, só lamento')
+        print('ACESSO NEGADO!!!\n')
         break
 
     
