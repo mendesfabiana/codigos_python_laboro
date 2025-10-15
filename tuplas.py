@@ -5,7 +5,7 @@
 
 frutas = ('banana','uva','morango','acerola')
 
-# print(type(frutas))
+print(type(frutas))
 
 print(frutas)
 
