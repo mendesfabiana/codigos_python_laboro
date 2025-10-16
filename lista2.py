@@ -20,12 +20,14 @@ print()
 
 while True:
     print()
-    apagar = int(input('Gostaria de apagar algum item da lista?\n[1] sim\n[2]não\n'))
+    apagar = int(input('Gostaria de apagar algum item da lista?\n[1] sim\n[2] não\n\nDigite a opção: '))
     if apagar == 2:
         print('Programa encerrado!!!')
+        break
+    if len(valores2) == 0:
+        print('A lista está vazia')
         break
     else:
         valores2.pop()
         print(valores2)
-       
 
