@@ -24,10 +24,11 @@ while True:
     if apagar == 2:
         print('Programa encerrado!!!')
         break
-    if len(valores2) == 0:
+    if len(valores2) == 0: # len() verifica o tamanho da lista
         print('A lista está vazia')
         break
     else:
         valores2.pop()
         print(valores2)
 
+    
