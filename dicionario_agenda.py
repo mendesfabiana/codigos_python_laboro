@@ -35,13 +35,15 @@ def excluir(escolha):
 def consultar():
         for chave, valor in agenda.items():
             print(f'{chave}: {valor}')
-    
+
+
 while True:
     menu()    
     resposta = int(input('Qual sua escolha: '))
     
     if resposta == 1:
         inserir()
+        
     elif resposta == 2:
         print(agenda)
         escolha = input('Qual o nome do contato que você deseja excluir: ')

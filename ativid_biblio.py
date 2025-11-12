@@ -12,11 +12,14 @@ while True:
     print('6. Contar livros')
     print('7. Sair')
     print()
-    try:
-        opcao = int(input('Escolha uma opção: '))
+    opcao = int(input('Escolha uma opção: '))
 
+    try:
         if opcao == 1:
             try:
+                print()
+                print('=== ADICIONAR LIVRO ===')
+                print()
                 livro = input('Digite o  nome do Livro: ')
                 biblio_pessoal[livro] = int(input('Digite o número de páginas: '))
                 print()
@@ -27,6 +30,9 @@ while True:
 
         elif opcao == 2:
             try:
+                print()
+                print('===CONSULTAR LIVRO ===')
+                print()
                 livro = input('Digite o nome do livro: ')
                 print()
                 print(f'O livro {livro} tem {biblio_pessoal[livro]} páginas')   
@@ -35,7 +41,8 @@ while True:
                 print('OPERAÇÃO INVÁLIDA! DIGITE NOVAMENTE.')
                 
         elif opcao == 3:
-            print('=== ATUALIZAÇÃO DE LIVROS ===')
+            print()
+            print('=== ATUALIZAR LIVRO ===')
             print()
             livro = input('Digite o nome do livro: ')
             paginas = int(input('Digite o novo número de páginas: '))
@@ -45,6 +52,9 @@ while True:
             print(f'livro {livro}: {biblio_pessoal[livro]} páginas.')
         
         elif opcao == 4:
+            print()
+            print('=== REMOVER LIVRO ===')
+            print()
             livro = input('Digite o nome do livro a ser removido: ')
             if livro in biblio_pessoal:
                 del biblio_pessoal[livro]
@@ -64,8 +74,10 @@ while True:
                     print('NENHUM LIVRO CADASTRADO NA BIBLIOTECA!')
 
         elif opcao == 6:
+            print('=== TOTAL DE LIVROS ===')
             print()
             print(f'Total de livros na biblioteca: {len(biblio_pessoal)}')
+            
 
         elif opcao == 7:    
             print()
@@ -75,4 +87,4 @@ while True:
     except Exception:   
         print()
         print('OPERAÇÃO INVÁLIDA! DIGITE NOVAMENTE.')
-
+    
